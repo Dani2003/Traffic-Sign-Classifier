@@ -79,9 +79,9 @@ async def startup_event():
     global MODEL
     try:
         MODEL = tf.keras.models.load_model("traffic_model.h5")
-        print("✅ Model loaded successfully!")
+        print("Model loaded successfully!")
     except Exception as e:
-        print(f"❌ Error loading model: {e}")
+        print(f"Error loading model: {e}")
 
 # Pydantic Models
 class UserSignup(BaseModel):
